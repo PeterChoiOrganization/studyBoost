@@ -7,9 +7,17 @@
 //
 
 #include <iostream>
+#include "gtest/gtest.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+TEST(HelloGtest, hello)
+{
+    ASSERT_EQ(1, 1);
+    ASSERT_GE(2, 1);
+    ASSERT_FALSE(false);
+    ASSERT_TRUE(true);
+}
+
+int main(int argc, char * argv[]) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }

@@ -8,7 +8,67 @@
 
 /* Begin PBXBuildFile section */
 		6D8F17561FDB7F4600E5EA7D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D8F17551FDB7F4600E5EA7D /* main.cpp */; };
+		6D8F17791FDB830300E5EA7D /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8F17691FDB81D200E5EA7D /* gtest.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D8F17681FDB81D200E5EA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D8F175C1FDB81D100E5EA7D /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4539C8FF0EC27F6400A70F4C;
+			remoteInfo = "gtest-framework";
+		};
+		6D8F176A1FDB81D200E5EA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D8F175C1FDB81D100E5EA7D /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C848FA101A209C0083642A;
+			remoteInfo = "gtest-static";
+		};
+		6D8F176C1FDB81D200E5EA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D8F175C1FDB81D100E5EA7D /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C8490B101A217E0083642A;
+			remoteInfo = "gtest_main-static";
+		};
+		6D8F176E1FDB81D200E5EA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D8F175C1FDB81D100E5EA7D /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40899F430FFA7184000B29AE;
+			remoteInfo = "gtest_unittest-framework";
+		};
+		6D8F17701FDB81D200E5EA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D8F175C1FDB81D100E5EA7D /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84987101A36850083642A;
+			remoteInfo = "gtest_unittest-static";
+		};
+		6D8F17721FDB81D200E5EA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D8F175C1FDB81D100E5EA7D /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4089A0130FFACEFC000B29AE;
+			remoteInfo = "sample1_unittest-framework";
+		};
+		6D8F17741FDB81D200E5EA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D8F175C1FDB81D100E5EA7D /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84997101A36A60083642A;
+			remoteInfo = "sample1_unittest-static";
+		};
+		6D8F177A1FDB830A00E5EA7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D8F175C1FDB81D100E5EA7D /* gtest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D07F2BC0486CC7A007CD1D0;
+			remoteInfo = "gtest-framework";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6D8F17501FDB7F4600E5EA7D /* CopyFiles */ = {
@@ -25,6 +85,7 @@
 /* Begin PBXFileReference section */
 		6D8F17521FDB7F4600E5EA7D /* boostLibrary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = boostLibrary; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8F17551FDB7F4600E5EA7D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6D8F175C1FDB81D100E5EA7D /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = googletest/googletest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8F17791FDB830300E5EA7D /* gtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +103,10 @@
 		6D8F17491FDB7F4600E5EA7D = {
 			isa = PBXGroup;
 			children = (
+				6D8F175C1FDB81D100E5EA7D /* gtest.xcodeproj */,
 				6D8F17541FDB7F4600E5EA7D /* boostLibrary */,
 				6D8F17531FDB7F4600E5EA7D /* Products */,
+				6D8F17781FDB830300E5EA7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +126,27 @@
 			path = boostLibrary;
 			sourceTree = "<group>";
 		};
+		6D8F175D1FDB81D100E5EA7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D8F17691FDB81D200E5EA7D /* gtest.framework */,
+				6D8F176B1FDB81D200E5EA7D /* libgtest.a */,
+				6D8F176D1FDB81D200E5EA7D /* libgtest_main.a */,
+				6D8F176F1FDB81D200E5EA7D /* gtest_unittest-framework */,
+				6D8F17711FDB81D200E5EA7D /* gtest_unittest */,
+				6D8F17731FDB81D200E5EA7D /* sample1_unittest-framework */,
+				6D8F17751FDB81D200E5EA7D /* sample1_unittest-static */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D8F17781FDB830300E5EA7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,6 +161,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6D8F177B1FDB830A00E5EA7D /* PBXTargetDependency */,
 			);
 			name = boostLibrary;
 			productName = boostLibrary;
@@ -107,12 +193,70 @@
 			mainGroup = 6D8F17491FDB7F4600E5EA7D;
 			productRefGroup = 6D8F17531FDB7F4600E5EA7D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6D8F175D1FDB81D100E5EA7D /* Products */;
+					ProjectRef = 6D8F175C1FDB81D100E5EA7D /* gtest.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6D8F17511FDB7F4600E5EA7D /* boostLibrary */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6D8F17691FDB81D200E5EA7D /* gtest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = gtest.framework;
+			remoteRef = 6D8F17681FDB81D200E5EA7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D8F176B1FDB81D200E5EA7D /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = 6D8F176A1FDB81D200E5EA7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D8F176D1FDB81D200E5EA7D /* libgtest_main.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest_main.a;
+			remoteRef = 6D8F176C1FDB81D200E5EA7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D8F176F1FDB81D200E5EA7D /* gtest_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "gtest_unittest-framework";
+			remoteRef = 6D8F176E1FDB81D200E5EA7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D8F17711FDB81D200E5EA7D /* gtest_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = gtest_unittest;
+			remoteRef = 6D8F17701FDB81D200E5EA7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D8F17731FDB81D200E5EA7D /* sample1_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-framework";
+			remoteRef = 6D8F17721FDB81D200E5EA7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D8F17751FDB81D200E5EA7D /* sample1_unittest-static */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-static";
+			remoteRef = 6D8F17741FDB81D200E5EA7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D8F174E1FDB7F4600E5EA7D /* Sources */ = {
@@ -124,6 +268,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D8F177B1FDB830A00E5EA7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "gtest-framework";
+			targetProxy = 6D8F177A1FDB830A00E5EA7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6D8F17571FDB7F4600E5EA7D /* Debug */ = {
@@ -233,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = $SRCROOT/googletest/googletest/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = $SRCROOT/googletest/googletest/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
