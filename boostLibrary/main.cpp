@@ -6,15 +6,27 @@
 //  Copyright © 2017년 Changmin.Choi. All rights reserved.
 //
 
+// boost versionL 1.65.1
+
 #include <iostream>
 #include "gtest/gtest.h"
+#include "boost/lambda/lambda.hpp"
+#include <boost/lambda/bind.hpp>
+#include "boost/function.hpp"
 
-TEST(HelloGtest, hello)
+int addTwo(const int a, const int b) {
+    return a+b;
+}
+
+TEST(BoostTest, lambda)
 {
-    ASSERT_EQ(1, 1);
-    ASSERT_GE(2, 1);
-    ASSERT_FALSE(false);
-    ASSERT_TRUE(true);
+    static const int kSecondInput = 113;
+    
+    boost::function<int (const int)> boostAdd = boost::lambda::bind(addTwo, boost::lambda::_1, kSecondInput);
+    
+    for(int i = 0 ; i< 1000 ; ++i){
+        ASSERT_EQ(addTwo(i,kSecondInput), boostAdd(i));
+    }
 }
 
 int main(int argc, char * argv[]) {

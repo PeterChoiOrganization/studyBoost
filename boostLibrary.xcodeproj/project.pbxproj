@@ -385,7 +385,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = $SRCROOT/googletest/googletest/include;
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/googletest/googletest/include,
+					/usr/local/boost_1_65_1,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -394,7 +397,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = $SRCROOT/googletest/googletest/include;
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/googletest/googletest/include,
+					/usr/local/boost_1_65_1,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
